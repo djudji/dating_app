@@ -1,0 +1,3 @@
+# 1. Rename app/assets/stylesheets/application.css -> app/assets/stylesheets/application.acss
+# 2. Copy/paste import statements inside application.scss
+# 3. Save with encoding (UTF-8) all .css and .js inside vendor/assets/stylesheets and vendor/assets/javascripts
