@@ -11,7 +11,7 @@
   <body>
     <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
       <li class="active"><a href="#"><i class="fa fa-users"></i> Discover</a></li>
-      <li><a href="#"><i class="fa fa-heart"></i> Matches</a></li>
+      <li><%= link_to users_matches_path do %><i class="fa fa-heart"></i> Matches<% end %></li>
       <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
     </nav>
     <div class="navbar navbar-default navbar-fixed-top">
@@ -34,5 +34,10 @@
        <%= image_tag "logo_white.png", alt: "Tinstuk Logo", class: "logo-brand" %>
     </a>
     <%= yield %>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
   </body>
 </html>
